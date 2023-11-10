@@ -1,0 +1,30 @@
+<div class="container rounded bg-white mt-5">
+  <div class="row">
+    <div class="col-md-4 border-right">
+      <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+        <img class="rounded-circle mt-5"
+             src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Anh-ga-cute-de-thuong-ve.jpg" width="90">
+        <span class="font-weight-bold">{{profileUser.name}}</span>
+        <span style="color:dodgerblue;">Personal Information </span>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div style="margin-top: 10px;">
+        <h3 align="center">Personal Information</h3>
+      </div>
+      <div class="p-3 py-5">
+        <div class="row mt-2">
+          <div class="col-md-6"><input readonly type="text" class="form-control" placeholder="first name"
+                                       value="{{profileUser.name}}"></div>
+          <div class="col-md-6"><input readonly type="text" class="form-control" value="{{profileUser.birthDay | date : 'dd/MM/y'}}"></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6"><input readonly type="text" class="form-control" placeholder="Email"
+                                       value="{{profileUser.email}}"></div>
+          <div class="col-md-6"><input readonly type="text" class="form-control" value="{{profileUser.address}}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

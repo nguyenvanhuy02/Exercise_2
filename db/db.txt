@@ -1,0 +1,25 @@
+INSERT INTO `exercise_2`.`role` (`id`, `name`) VALUES ('1', 'ROLE_ADMIN'),
+                                                      ('2', 'ROLE_USER');
+
+INSERT INTO `exercise_2`.`account` (`id`,`password`, `user_name`) VALUES ('1','$2a$10$LoIzDKZznqQtkLwxH2alseTcW46fXgkgUrmGvgUV3kHKVhAHaYwra', 'admin'),
+                                                                         ('2','$2a$10$LoIzDKZznqQtkLwxH2alseTcW46fXgkgUrmGvgUV3kHKVhAHaYwra', 'employee'),
+                                                                         ('3','$2a$10$LoIzDKZznqQtkLwxH2alseTcW46fXgkgUrmGvgUV3kHKVhAHaYwra', 'huynguyen'),
+                                                                         ('4','$2a$10$LoIzDKZznqQtkLwxH2alseTcW46fXgkgUrmGvgUV3kHKVhAHaYwra', 'maohuy'),
+                                                                         ('5','$2a$10$LoIzDKZznqQtkLwxH2alseTcW46fXgkgUrmGvgUV3kHKVhAHaYwra', 'hoanguyen'),
+                                                                         ('6','$2a$10$LoIzDKZznqQtkLwxH2alseTcW46fXgkgUrmGvgUV3kHKVhAHaYwra', 'vannam');
+
+INSERT INTO `exercise_2`.`account_role` (`id`, `account_id`, `role_id`) VALUES ('1', '1', '1'),
+                                                                               ('2', '2', '2'),
+                                                                               ('3', '3', '2'),
+                                                                               ('4', '4', '2'),
+                                                                               ('5', '5', '2'),
+                                                                               ('6', '6', '2');
+
+INSERT INTO `exercise_2`.`user` (`id`, `address`, `birth_day`, `email`, `name`, `account_id`)
+VALUES ('1', 'Hà Nội', '11/02/2003', 'admin@gmail.com', 'Nguyễn Văn Huy', '1'),
+       ('2', 'Đà Nẵng', '12/03/1999', 'hoanam@gmail.com', 'Nguyễn Hoài Nam', '2'),
+       ('3', 'Huế', '11/12/2003', 'huynguyen@gmail.com', 'Nguyễn Nhật Huy', '3'),
+       ('4', 'Cà Mau', '07/02/1997', 'nam@gmail.com', 'Lê Ngọc Nam', '4'),
+       ('5', 'Quảng Trị', '11/07/2002', 'anhnguyen@gmail.com', 'Lê Ngọc Ánh', '5'),
+       ('6', 'Hồ Chí Minh', '08/08/1998', 'chinguyen@gmail.com', 'Nguyễn Kim Chi', '6');
+
